@@ -6,22 +6,22 @@
   <meta name="description" content="Patrick Robert Conseils — Conseil stratégique en TI, données et IA pour les institutions financières.">
   <title>Patrick Robert Conseils</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --navy: #071525;
-      --navy-mid: #0d2040;
+      --navy: #0a1e35;
+      --navy-mid: #102845;
       --navy-light: #143058;
       --navy-soft: #1a3d6b;
       --steel: #7ba7d4;
       --steel-light: #a8c8e8;
       --steel-pale: #d4e6f5;
       --ice: #e8f2fc;
-      --text: #e2eaf6;
-      --text-soft: #7a9ab8;
-      --text-muted: #3d5a7a;
-      --rule: rgba(123,167,212,0.12);
-      --rule-bright: rgba(123,167,212,0.25);
+      --text: #f0f5fc;
+      --text-soft: #9ab5d0;
+      --text-muted: #5a7a9a;
+      --rule: rgba(123,167,212,0.18);
+      --rule-bright: rgba(123,167,212,0.35);
       --white: #ffffff;
     }
 
@@ -31,7 +31,7 @@
     body {
       font-family: 'DM Sans', sans-serif;
       font-weight: 300;
-      background: var(--navy);
+      background: #091c30;
       color: var(--text);
       line-height: 1.7;
       overflow-x: hidden;
@@ -68,7 +68,7 @@
       font-size: 1rem;
       font-weight: 400;
       letter-spacing: 0.1em;
-      color: var(--text);
+      color: #ffffff;
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -140,17 +140,8 @@
       position: relative;
     }
 
-    /* Diagonal split line */
-    .hero::after {
+
       content: '';
-      position: absolute;
-      top: 0; bottom: 0;
-      left: 53%;
-      width: 2px;
-      background: linear-gradient(to bottom, transparent 5%, var(--steel) 30%, var(--steel-light) 50%, var(--steel) 70%, transparent 95%);
-      opacity: 0.3;
-      transform: skewX(-3deg);
-    }
 
     .hero-content {
       display: flex;
@@ -195,7 +186,7 @@
       font-size: clamp(3.2rem, 5vw, 5rem);
       font-weight: 300;
       line-height: 1.1;
-      color: var(--text);
+      color: #ffffff;
       margin-bottom: 2rem;
     }
 
@@ -253,7 +244,7 @@
     .hero-image {
       position: relative;
       overflow: hidden;
-      background: var(--navy-mid);
+      background: #142d4e;
     }
 
     .hero-image img {
@@ -261,9 +252,9 @@
       height: 100%;
       object-fit: cover;
       object-position: center top;
-      filter: grayscale(30%) contrast(1.05);
-      mix-blend-mode: luminosity;
-      opacity: 0.7;
+      filter: none;
+
+      opacity: 1;
     }
 
     .hero-image::before {
@@ -333,13 +324,13 @@
       font-size: clamp(2.2rem, 3.5vw, 3.2rem);
       font-weight: 300;
       line-height: 1.2;
-      color: var(--text);
+      color: #ffffff;
       margin-bottom: 1.5rem;
     }
 
     /* ── SERVICES ── */
     .services {
-      background: var(--navy-mid);
+      background: #0f2540;
       position: relative;
       overflow: hidden;
     }
@@ -358,7 +349,7 @@
 
     .services-intro {
       max-width: 560px;
-      color: var(--text-soft);
+      color: #b8d0e8;
       font-size: 1rem;
       margin-bottom: 4rem;
       line-height: 1.85;
@@ -375,7 +366,7 @@
     .service-card {
       padding: 2.5rem;
       border: 1px solid var(--rule-bright);
-      background: rgba(7,21,37,0.7);
+      background: rgba(15,40,75,0.7);
       backdrop-filter: blur(10px);
       transition: all 0.4s;
       position: relative;
@@ -415,18 +406,18 @@
       font-size: 1.5rem;
       font-weight: 400;
       margin-bottom: 0.8rem;
-      color: var(--text);
+      color: #ffffff;
     }
 
     .service-desc {
       font-size: 0.88rem;
-      color: var(--text-soft);
+      color: #9ab8d4;
       line-height: 1.75;
     }
 
     /* ── APPROACH ── */
     .approach {
-      background: var(--navy);
+      background: #091c30;
       position: relative;
     }
 
@@ -441,7 +432,7 @@
 
     .approach-text p {
       font-size: 1rem;
-      color: var(--text-soft);
+      color: #b8d0e8;
       line-height: 1.9;
       margin-bottom: 1.5rem;
     }
@@ -472,7 +463,7 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 3.5rem;
       font-weight: 300;
-      color: var(--steel-light);
+      color: #ffffff;
       line-height: 1;
       margin-bottom: 0.4rem;
     }
@@ -480,14 +471,14 @@
     .stat-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.65rem;
-      color: var(--text-muted);
+      color: #7a9ab8;
       letter-spacing: 0.08em;
       line-height: 1.5;
     }
 
     /* ── ABOUT ── */
     .about {
-      background: var(--navy-mid);
+      background: #142d4e;
       position: relative;
       overflow: hidden;
     }
@@ -521,7 +512,7 @@
       font-size: 1.8rem;
       font-weight: 300;
       margin-bottom: 0.3rem;
-      color: var(--text);
+      color: #ffffff;
     }
 
     .about-aside-title {
@@ -550,7 +541,7 @@
 
     .about-main p {
       font-size: 1rem;
-      color: var(--text-soft);
+      color: #b8d0e8;
       line-height: 1.9;
       margin-bottom: 1.5rem;
     }
@@ -562,7 +553,7 @@
 
     /* ── CONTACT ── */
     .contact {
-      background: var(--navy);
+      background: #091c30;
       text-align: center;
       padding: 9rem 6rem;
       position: relative;
@@ -606,7 +597,7 @@
       font-size: clamp(2.5rem, 5vw, 4rem);
       font-weight: 300;
       line-height: 1.2;
-      color: var(--text);
+      color: #ffffff;
       margin-bottom: 1rem;
       position: relative;
     }
@@ -652,7 +643,7 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--navy-mid);
+      background: #142d4e;
       color: var(--text-muted);
       text-align: center;
       padding: 2rem;
@@ -678,7 +669,6 @@
       nav { padding: 1.2rem 1.5rem; }
       .nav-links { display: none; }
       .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero::after { display: none; }
       .hero-content { padding: 5rem 1.5rem 3rem; }
       .hero-content::before { display: none; }
       .hero-image { height: 55vh; }
@@ -689,7 +679,6 @@
       .about-aside { position: static; }
       .contact { padding: 5rem 1.5rem; }
       .contact::after { font-size: 8rem; }
-    }
   </style>
 </head>
 <body>
@@ -785,8 +774,8 @@
         <div class="stat-label" data-fr="ans en leadership TI au sein d'institutions financières" data-en="years in IT leadership within financial institutions">ans en leadership TI au sein d'institutions financières</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" style="font-size:1.5rem;line-height:1.3;padding-top:0.3rem">Du projet<br>au portefeuille.</div>
-        <div class="stat-label" data-fr="De l'architecture à la stratégie." data-en="From architecture to strategy.">De l'architecture à la stratégie.</div>
+        <div class="stat-number" style="font-size:1.5rem;line-height:1.3;padding-top:0.3rem">De l'architecture<br>à la livraison.</div>
+        <div class="stat-label" data-fr="Solutions · Plateformes · Infrastructures · Gouvernance · Opérations" data-en="Solutions · Platforms · Infrastructure · Governance · Operations">Solutions · Plateformes · Infrastructures · Gouvernance · Opérations</div>
       </div>
       <div class="stat-item">
         <div class="stat-number" style="font-size:1.5rem;line-height:1.3;padding-top:0.3rem">Un seul<br>interlocuteur.</div>
